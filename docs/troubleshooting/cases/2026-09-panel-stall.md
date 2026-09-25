@@ -1,7 +1,7 @@
 # Case: front panel stalls after the Pi connects
 
 - **Opened:** 2026-09-25
-- **Status:** Touch and encoder fixed by touch recalibration. Waterfall not yet confirmed.
+- **Status:** Closed. Touch recalibration fixed touch, encoder, and waterfall.
 - **Hardware:** zBitx v1. Raspberry Pi Zero 2 W and RP2040 front panel.
 
 ## History
@@ -57,10 +57,10 @@ Touch runs entirely on the panel. The waterfall depends on the Pi and the link. 
 
 | Date | Configuration | Test | Result |
 |---|---|---|---|
-| 2026-09-25 | Latest drexjj SD image and drexjj panel firmware | Touch recalibration | Touch works. Buttons respond. The encoder adjusts a selected field. |
+| 2026-09-25 | Latest drexjj SD image and drexjj panel firmware | Touch recalibration | Touch works. Buttons respond. The encoder adjusts a selected field. The waterfall draws. |
 
 ## Open questions
 
-- Does the waterfall draw now? If not, hypothesis 3 is next.
+- Why did the waterfall stay dark before recalibration? It works after recalibration, so hypotheses 3 to 5 were not needed. **Unverified:** a quiet band, or a side effect of the bad calibration.
 - Does the stock configuration also work after recalibration? The calibration data is shared, because both firmwares use EEPROM bytes 0-11.
 - What corrupted the calibration? The drexjj and stock firmware use the same EEPROM layout. So the layout change alone does not explain it.

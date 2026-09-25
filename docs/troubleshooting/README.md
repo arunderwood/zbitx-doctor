@@ -6,7 +6,7 @@ Runbooks are in progress. Until they exist, start from the open case and the ref
 
 | Case | Status | Summary |
 |---|---|---|
-| [2026-09 panel stall](cases/2026-09-panel-stall.md) | Touch fixed | Touch and encoder dead after a firmware change. Touch recalibration fixed both. Waterfall unconfirmed. |
+| [2026-09 panel stall](cases/2026-09-panel-stall.md) | Closed | Touch and encoder dead after a firmware change. Touch recalibration fixed touch, encoder, and waterfall. |
 
 ## Quick facts for any panel fault
 
