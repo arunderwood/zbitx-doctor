@@ -1,0 +1,18 @@
+[submodule "refs/drexjj_zbitx"]
+	path = refs/drexjj_zbitx
+	url = https://github.com/drexjj/zbitx.git
+[submodule "refs/drexjj_zbitxfrontpanel"]
+	path = refs/drexjj_zbitxfrontpanel
+	url = https://github.com/drexjj/zbitxfrontpanel.git
+[submodule "refs/afarhan_zbitxv2"]
+	path = refs/afarhan_zbitxv2
+	url = https://github.com/afarhan/zbitxv2.git
+[submodule "refs/afarhan_zbitxfrontpanel"]
+	path = refs/afarhan_zbitxfrontpanel
+	url = https://github.com/afarhan/zbitxfrontpanel.git
+[submodule "refs/afarhan_zbitxv2_front_panel"]
+	path = refs/afarhan_zbitxv2_front_panel
+	url = https://github.com/afarhan/zbitxv2_front_panel.git
+[submodule "refs/afarhan_zbitx"]
+	path = refs/afarhan_zbitx
+	url = https://github.com/afarhan/zbitx.git
