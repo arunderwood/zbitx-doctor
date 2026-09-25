@@ -1,7 +1,7 @@
 # Case: front panel stalls after the Pi connects
 
 - **Opened:** 2026-09-25
-- **Status:** Open
+- **Status:** Touch and encoder fixed by touch recalibration. Waterfall not yet confirmed.
 - **Hardware:** zBitx v1. Raspberry Pi Zero 2 W and RP2040 front panel.
 
 ## History
@@ -47,7 +47,7 @@ Touch runs entirely on the panel. The waterfall depends on the Pi and the link. 
 
 | # | Hypothesis | Explains | Check |
 |---|---|---|---|
-| 1 | Bad touch calibration in panel flash | Touch, encoder | Power on with a finger on the screen. Recalibrate. |
+| 1 | Bad touch calibration in panel flash | Touch, encoder | **Confirmed.** Recalibration restores touch and encoder. |
 | 2 | Touch hardware fault | Touch, encoder | No calibration arrows appear, or taps do nothing during calibration. |
 | 3 | Pi UI thread stalls on the I2C bus after the first row | Waterfall | Run `top -H` and `pinctrl get 6,13` on the Pi. A thread near 100% and GPIO6 low confirms it. |
 | 4 | Stock panel flash did not take | All, in the stock configuration | The stock boot screen shows "zBitx firmware v1.07d". drexjj shows no version. |
@@ -55,4 +55,12 @@ Touch runs entirely on the panel. The waterfall depends on the Pi and the link. 
 
 ## Tests done
 
-None yet.
+| Date | Configuration | Test | Result |
+|---|---|---|---|
+| 2026-09-25 | Latest drexjj SD image and drexjj panel firmware | Touch recalibration | Touch works. Buttons respond. The encoder adjusts a selected field. |
+
+## Open questions
+
+- Does the waterfall draw now? If not, hypothesis 3 is next.
+- Does the stock configuration also work after recalibration? The calibration data is shared, because both firmwares use EEPROM bytes 0-11.
+- What corrupted the calibration? The drexjj and stock firmware use the same EEPROM layout. So the layout change alone does not explain it.

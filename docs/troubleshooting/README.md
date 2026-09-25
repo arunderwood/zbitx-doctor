@@ -6,7 +6,7 @@ Runbooks are in progress. Until they exist, start from the open case and the ref
 
 | Case | Status | Summary |
 |---|---|---|
-| [2026-09 panel stall](cases/2026-09-panel-stall.md) | Open | Panel paints the ready screen, then touch, encoder, and waterfall do nothing. Battery readout still updates. |
+| [2026-09 panel stall](cases/2026-09-panel-stall.md) | Touch fixed | Touch and encoder dead after a firmware change. Touch recalibration fixed both. Waterfall unconfirmed. |
 
 ## Quick facts for any panel fault
 
