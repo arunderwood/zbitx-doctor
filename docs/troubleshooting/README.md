@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Runbooks are in progress. Until they exist, start from the open case and the reference pages.
+No runbooks yet. Start from the case records and the reference pages.
 
 ## Cases
 
